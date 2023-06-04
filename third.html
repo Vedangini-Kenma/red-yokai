@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+       
+        body{
+         background-color: powderblue;
+         font-family: 'Times New Roman', Times, serif;
+        font-size: 13px;  /*1/96th of an inch*/
+        line-height: 1.3em;
+        text-align: center;
+        }
+        .container{
+           width: 900px;
+           
+           border: 3px solid saddlebrown;
+           padding: 1px 2px;
+           margin: auto;
+           background-color: bisque;
+           display: inline-block;
+
+      
+        }
+        .items{
+            width: 900px;
+            height:1444px;
+            border: 4px solid blueviolet;
+            margin: auto;
+            padding: 14px 15px;
+            background-color: palevioletred;
+            display: inline-block;
+
+
+        }
+
+        /*.para{
+            border: 3px solid green;
+            margin: 12px 13px;
+            padding: 1px;
+            
+
+        }*/
+
+        #fruits{
+            float: left;
+            /* absolute me voh desired position me h without gap  realtive to its 1st parent tht is container or body */
+            position: fixed;
+            /* fixed position me position fixed to the browser window */
+        }
+
+        #computer{
+            float: left;
+           width: 50%;
+           position: sticky;
+           top: 3px;
+        }
+
+        #staionary{
+            float: right;
+            width: 48%;
+            position: relative;/*relative to its original position*/
+            top: 34px;
+            left: 34px;
+
+        }
+
+        .bttn{
+            background-color: black;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: medium;
+            color: antiquewhite;
+            border-radius: 3px;
+
+        }
+        a{
+            text-decoration: none;
+            color: violet;
+
+        }
+        a:hover{
+            color: rgb(179, 35, 35);
+            background-color: aqua;
+        }
+
+        a:visited{
+            color: black;
+            background-color: lightgreen;
+        }
+
+        a:active{
+            background-color: lightsalmon;
+        }
+
+        .navbar{
+            background-color: red;
+            border-radius: 4px;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 3px 3px;
+
+        }
+        
+        .navbar li a{
+            padding: 3px 3 px;
+            text-decoration: wavy;
+            color:aliceblue;
+
+        }
+
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 4px;
+            float: right;
+        }
+        .navbar img{
+            width: 34px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="https://m.media-amazon.com/images/M/MV5BZjZjNzI5MDctY2Y4YS00NmM4LTljMmItZTFkOTExNGI3ODRhXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_.jpg" alt="">
+
+            <ul>
+                
+                <li> <a href="#">home</a></li>
+                <li> <a href="#">about</a></li>
+                <li> <a href="#">contact</a></li>
+                <li> <a href="#">more</a></li>
+               <div class="search" "> 
+                 <input type="text" name="search" id="search
+                " placeholder="search this website"> 
+             </div>   
+            </ul>
+            
+        </nav>
+    </header>
+    <div class="items">
+    <div id="fruits" class="container">
+        <h3>This is my heading</h3>
+        <p id ='first' class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magnam alias distinctio nisi, fugiat ratione recusandae mollitia consequuntur veritatis numquam nihil eum dicta error.</p>
+        <a href="https:yahoo.com" class="bttn">read more</a>
+        <button class="bttn" >contact us</button>
+    </div>
+    <div id="computer" class="container">
+        <h3>This is my heading</h3>
+        <p id ='second' class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate magnam alias distinctio nisi, fugiat ratione recusandae mollitia consequuntur veritatis numquam nihil eum dicta error Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quidem expedita modi porro autem delectus! Ab eos ipsa, aspernatur aliquam rem animi Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, itaque ratione. Nemo rem ullam ea, dicta tempora doloribus quibusdam perferendis eum temporibus soluta repudiandae labore mollitia odit, rerum officiis assumenda voluptatum cumque quod error aliquam commodi. Iste nostrum sit molestias deleniti, sunt eum, pariatur excepturi a odio ea rerum commodi eveniet numquam? Quis nesciunt saepe cupiditate.</p>
+    </div>
+    <div id="staionary" class="container">
+        <h3>This is my heading</h3>
+        <p id ='third' class="para">Lorem ipsum dolor, .</p>
+    </div>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; ;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:  url(street1.png);
+    background-attachment: fixed;
+    background-size: auto;
+    background-position: center;
+    transition: 2s;
+
+}
+/* .navbar{
+    width: 95%;
+    margin: 0px 5px;
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;}
+     */
+.logo{
+    width: 50%;
+    margin: auto;
+    padding: 20px 110px;
+    background-size: auto;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    background-image: url(logo.png) ;
+    
+    
+    /* transform: translate(50%,50%); */
+    background:  content-box radial-gradient(rgba(4, 71, 41, 0.734),rgba(55, 2, 2, 0.544));;
+    z-index: 1;
+    transition: 2s;
+}
+.logo1{
+    width: 30%;
+    margin: auto;
+    color: yellow;
+}
+
+
+.logo:hover{
+    box-shadow: 0px 20px 10px rgb(58, 1, 1) ;
+
+}
+
+/* .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0px 10px;
+    font-size: small
+    ;
+    position: relative;
+    
+   
+
+}
+    
+
+.navbar ul li a{
+    text-decoration: red wavy underline;
+    text-transform: uppercase;
+    color: white;
+
+
+} */
+.login_box {
+   
+   width: 45%;
+   height: 40%;
+margin: auto ;
+/* padding: 60px 40px; */
+
+box-shadow: -5px 5px 5px rgb(92, 15, 15), 5px -5px 5px rgb(92, 15, 15);
+box-sizing: border-box;
+border-radius: 3px 38px;
+    text-align: center;
+    /* align-items: center; */
+    background:  content-box radial-gradient( rgba(75, 4, 4, 0.6),rgba(3, 43, 27, 0.693));
+}
+.form_login input{
+    width: 90%;
+    height: 40px;
+    line-height: 2EM;
+    border-radius: 10PX ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+   border: none;
+color: white;
+border-color: antiquewhite;
+    background: transparent;
+    outline: none;
+    letter-spacing: 3px;
+    padding-bottom: 2px;
+    
+   
+}
+
+   
+
+input[type='submit']{
+    background-color: rgb(0, 0, 0);
+
+}
+#fp{
+    color: #e4b2c8;
+    font-size: small;
+    font-weight: 100;
+    font-style: italic;
+}
+button{
+    background-color: rgba(12, 255, 12, 0.554) ;
+    width: 70%;
+    height: 30px;
+    
+}
+button a{
+    color: aliceblue;
+    text-decoration: none;
+}
+hr{
+    width: 90%;
+    /* position: relative; */
+
+    margin: auto;
+    /* size: 20px; */
+    
+    
+}
